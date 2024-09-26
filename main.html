@@ -11,8 +11,36 @@
     <script src="scripts.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
        <style>
-        .container {
+        .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f5f;
+}
+        .containers {
             padding: 20px;
+            background:aliceblue;
             text-align: center;
         }
         .map-container {
@@ -24,6 +52,7 @@
             border: none;
             width: 100%;
             height: 100%;
+            border-radius: 20px;
         }
         .contact-links {
             margin: 20px 0;
@@ -70,25 +99,31 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h2>SmartBloom</h2>
-            <p>Revolutionizing Pollination for Vertical Farming Using IoT & Robotics</p>
+            <p>SmartBloom is an innovative solution designed to automate and enhance the pollination process in vertical farming environments. By leveraging IoT technology and advanced robotics, SmartBloom ensures efficient, precise pollination, reducing the need for manual labor and increasing crop yield. Our system integrates real-time data collection, monitoring, and intelligent decision-making to optimize plant growth, making vertical farming more sustainable, scalable, and cost-effective. Join us in revolutionizing the future of urban agriculture with cutting-edge technology.</p>
+
             <a href="#about" class="cta">Learn More</a>
         </div>
         <div class="hero-image">
             <img src="robot.png" alt="SmartBloom Robot">
         </div>
     </section>
-    <section id="about">
-        <div class="container">
-            <h2>About SmartBloom</h2>
-            <p>SmartBloom is an innovative IoT-driven automated pollination system designed to revolutionize vertical farming. As global food production faces challenges due to declining natural pollinators like bees and butterflies, SmartBloom offers a sustainable solution. Utilizing a small robotic car equipped with an ESP32 camera module, the system identifies flowers and performs cross-pollination efficiently.
-<br><br>
-                The robotic car autonomously navigates through vertical farming setups, accurately detecting flowers and simulating natural pollination with a brush mechanism. This automation not only reduces reliance on dwindling natural pollinators but also ensures consistent and high-quality crop yields. SmartBloom is engineered to be scalable, adaptable to various vertical farming configurations, and designed for cost-effectiveness and eco-friendliness.
-                <br> <br>
-                The integration of advanced technologies, such as machine learning and computer vision algorithms, allows for real-time flower detection and processing. Enhanced by the capabilities of 5G technology, SmartBloom can handle massive data transfer, ensuring ultra-low latency communication between devices, which is crucial for timely and precise pollination.
-                <br><br>
-                By optimizing resource utilization and promoting sustainable agricultural practices, SmartBloom represents a significant advancement in precision farming, paving the way for a more efficient and resilient agricultural future. This project embodies the potential of technology to address critical challenges in food production and sustainability.</p>
+    <div class="video-container">
+        <h2>Project Video</h2>
+        <video id="myVideo" width="640" height="360" controls>
+            <source src="1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="controls">
+
+            <button id="rewindBtn"><i class='bx bx-rewind'></i>
+            </button>
+            <button id="playPauseBtn"><i class='bx bx-play'></i></button>
+            <button id="fastForwardBtn"><i class='bx bx-fast-forward'></i>
+            </i></button>
         </div>
-    </section>
+    </div>
+
     <section id="features">
         <div class="container">
             <h2>Key Features</h2>
@@ -129,6 +164,40 @@
             </div>
         </div>
     </section>
+    <section id="flowchart">
+        <h1>SmartBloom Project Flowchart</h1>
+        <div class="flowchart-container">
+            <div class="flow-step">
+                <h3>Sensor Initialization</h3>
+                <p>IoT sensors monitor environmental parameters like humidity, temperature, and plant growth stages.</p>
+            </div>
+            <div class="arrow">&#8594;<br><span>Collects Data</span></div>
+            <div class="flow-step">
+                <h3>Data Collection</h3>
+                <p>Real-time environmental data is collected from the sensors placed near plants.</p>
+            </div>
+            <div class="arrow">&#8594;<br><span>Transmits Data</span></div>
+            <div class="flow-step">
+                <h3>Data Transmission</h3>
+                <p>Data from sensors is sent to the cloud for further processing and analysis.</p>
+            </div>
+            <div class="arrow-down" style="color: aliceblue;">&#8595;<br><span style="color: aliceblue;">Triggers Pollination</span></div>
+            <div class="flow-step">
+                <h3>Pollination Trigger</h3>
+                <p>AI analyzes the data and triggers robotic pollination based on environmental conditions.</p>
+            </div>
+            <div class="arrow">&#8594;<br><span>Starts Robotic Pollination</span></div>
+            <div class="flow-step">
+                <h3>Robotic Pollination</h3>
+                <p>Autonomous robots equipped with pollination tools are deployed to pollinate the plants.</p>
+            </div>
+            <div class="arrow-down" style="color: aliceblue;">&#8595;<br><span style="color: aliceblue;">Generates Logs</span></div>
+            <div class="flow-step">
+                <h3>Data Logging & Reporting</h3>
+                <p>Logs and reports are generated to track data trends, pollination success, and growth improvements.</p>
+            </div>
+        </div>
+    </section>
     <section id="usecase">
         <div class="container">
             <h2>SmartBloom as a 5G Use Case</h2>
@@ -147,7 +216,7 @@
             </p>
         </div>
     </section>
-    <div class="container">
+    <div class="containers">
         <h1 style="font-size: 3rem; color: rgb(71, 30, 100);">Connect With Us</h1>
         <div class="map-container">
             <iframe 
@@ -160,7 +229,7 @@
             <a href="https://wa.me/919031358194" target="_blank">Chat on WhatsApp</a>
         </div>
     </div>
-    <footer style="display: flex;justify-content: center; background-color: rgb(236, 226, 245);" >
+    <footer style="display: flex;justify-content: center;    background: linear-gradient(135deg, #007acc, #00cc99);" >
         <div >
             <p>© 2024 SmartBloom | Designed By Smart Bloom Team
 
@@ -173,6 +242,7 @@
         </div>
        
     </footer>
-
+    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

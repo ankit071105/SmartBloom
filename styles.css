@@ -1,4 +1,6 @@
-/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +8,11 @@
 }
 
 body {
+    text-align: justify;
 
     background:linear-gradient(to top right, rgb(0, 19, 56) 30%, rgb(157, 0, 255) 100%);
 }
 
-/* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -21,6 +23,9 @@ nav {
 
 nav .logo h1 {
     color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
 }
 
 nav ul {
@@ -39,13 +44,19 @@ nav ul li a {
     display: none;
 }
 
-/* Hero Section */
 .hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 50px;
     background: linear-gradient(135deg, #007acc, #00cc99);
-    color: white;
+    color: rgb(179, 249, 255);
+    text-align: start;
+    font-family: "Zilla Slab", serif;
+    font-style: italic;
+    font-size: small;
+    font-weight: 400;
+    text-align: justify;
+
 }
 
 .hero-content {
@@ -53,6 +64,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    
 }
 
 .hero h2 {
@@ -67,6 +79,13 @@ h2{
 }
 p{
     text-align: start;
+    font-family: "Zilla Slab", serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+
+
 }
 .cta {
     padding: 10px 20px;
@@ -84,7 +103,6 @@ p{
 
 }
 
-/* Sections */
 section {
     padding: 60px 20px;
 }
@@ -92,7 +110,9 @@ section {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 background-color: aliceblue;
+border-radius: 20px;
     box-shadow: 0 14px 14px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -120,8 +140,6 @@ footer {
     padding: 20px;
     text-align: center;
 }
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
@@ -146,7 +164,6 @@ footer {
     }
 }
 
-/* Animations */
 .cta:hover {
     background-color: #00cc99;
 }
@@ -167,13 +184,81 @@ footer {
 }
 .feature p{
     font-size: small;
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
     font-style: italic;
     letter-spacing: 1px;
     padding: 20px;
 }
 footer p{
     text-align: center;
-    color: rgb(27, 1, 27);
+    color: rgb(108, 35, 140);
     font-weight: bolder;
-    
+
+}
+
+
+#flowchart {
+    text-align: center;
+    background: linear-gradient(135deg, #007acc, #00cc99);
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2rem;
+  color: #00ffd9;
+    margin-bottom: 20px;
+}
+
+.flowchart-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.flow-step {
+    background-color: #263753;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 180px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.flow-step h3 {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.flow-step p {
+    font-size: 0.85rem;
+    margin: 10px 0 0;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #cbe4ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow span {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: #ccdce2;
+}
+
+.arrow-down {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .flowchart-container {
+        grid-template-columns: 1fr;
+    }
 }
