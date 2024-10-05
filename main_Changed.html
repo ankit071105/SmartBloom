@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartBloom - IoT Automated Pollination for Vertical Farming</title>
-    <meta name="description" content="SmartBloom is an IoT-driven automated pollination system designed for vertical farming. It uses robotics, computer vision, and 5G technology to enhance crop yields through precise and efficient pollination.">
-    <meta name="keywords" content="SmartBloom, IoT, automated pollination, vertical farming, robotics, computer vision, ESP32 camera, sustainable agriculture, precision farming, 5G, pollination technology, smart agriculture, automated farming, pollination robots, AI in agriculture">
-    <link rel="shortcut icon" href="https://ideogram.ai/assets/progressive-image/balanced/response/HWLrJuT_TceNMi8_ru8V0g" type="image/x-icon">
+    <meta name="description"
+        content="SmartBloom is an IoT-driven automated pollination system designed for vertical farming. It uses robotics, computer vision, and 5G technology to enhance crop yields through precise and efficient pollination.">
+    <meta name="keywords"
+        content="SmartBloom, IoT, automated pollination, vertical farming, robotics, computer vision, ESP32 camera, sustainable agriculture, precision farming, 5G, pollination technology, smart agriculture, automated farming, pollination robots, AI in agriculture">
+    <link rel="shortcut icon"
+        href="https://ideogram.ai/assets/progressive-image/balanced/response/HWLrJuT_TceNMi8_ru8V0g"
+        type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-       <style>
-        nav{
+    <style>
+        nav {
             position: sticky;
             top: 0;
             z-index: 10;
         }
+
         .video-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid #ccc;
-    padding: 20px;
-    background-color: #fff;
-}
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #ccc;
+            padding: 20px;
+            background-color: #fff;
+        }
 
-.controls {
-    margin-top: 10px;
-}
+        .controls {
+            margin-top: 10px;
+        }
 
-button {
-    padding: 10px 15px;
-    margin: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #008cba;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
 
-button:hover {
-    background-color: #005f5f;
-}
+        button:hover {
+            background-color: #005f5f;
+        }
+
         .containers {
             padding: 20px;
-            background:aliceblue;
+            background: aliceblue;
             text-align: center;
         }
+
         .map-container {
             margin: 20px 0;
             height: 400px;
             width: 100%;
         }
+
         iframe {
             border: none;
             width: 100%;
             height: 100%;
             border-radius: 20px;
         }
+
         .contact-links {
             margin: 20px 0;
         }
+
         .contact-links a {
             display: inline-block;
             margin: 10px;
@@ -71,9 +83,11 @@ button:hover {
             background-color: #25D366;
             border-radius: 5px;
         }
+
         .contact-links a.email-link {
             background-color: #007BFF;
         }
+
         .portfolio .portfolio-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -82,6 +96,7 @@ button:hover {
         }
     </style>
 </head>
+
 <body>
 
     <nav>
@@ -89,12 +104,12 @@ button:hover {
             <h1>SmartBloom</h1>
         </div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#flowchart">Flowchart</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#video">Video</a></li>
-            <li><a href="#usecase">Use Case</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#flowchart"><i class="fa-solid fa-boxes-stacked"></i>Flowchart</a></li>
+            <li><a href="#features"><i class="fa-solid fa-star"></i>Features</a></li>
+            <li><a href="#video"><i class="fa-solid fa-video"></i>Video</a></li>
+            <li><a href="#usecase"><i class="fa-solid fa-microchip"></i>Use Case</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-address-book"></i>Contact</a></li>
         </ul>
         <div class="menu-toggle">
             <span class="bar"></span>
@@ -105,7 +120,12 @@ button:hover {
     <section id="home" class="hero">
         <div class="hero-content">
             <h2>SmartBloom</h2>
-            <p>SmartBloom is an innovative solution designed to automate and enhance the pollination process in vertical farming environments. By leveraging IoT technology and advanced robotics, SmartBloom ensures efficient, precise pollination, reducing the need for manual labor and increasing crop yield. Our system integrates real-time data collection, monitoring, and intelligent decision-making to optimize plant growth, making vertical farming more sustainable, scalable, and cost-effective. Join us in revolutionizing the future of urban agriculture with cutting-edge technology.</p>
+            <p>SmartBloom is an innovative solution designed to automate and enhance the pollination process in vertical
+                farming environments. By leveraging IoT technology and advanced robotics, SmartBloom ensures efficient,
+                precise pollination, reducing the need for manual labor and increasing crop yield. Our system integrates
+                real-time data collection, monitoring, and intelligent decision-making to optimize plant growth, making
+                vertical farming more sustainable, scalable, and cost-effective. Join us in revolutionizing the future
+                of urban agriculture with cutting-edge technology.</p>
 
             <a href="#about" class="cta">Learn More</a>
         </div>
@@ -119,14 +139,14 @@ button:hover {
             <source src="1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        
+
         <div class="controls">
 
             <button id="rewindBtn"><i class='bx bx-rewind'></i>
             </button>
             <button id="playPauseBtn"><i class='bx bx-play'></i></button>
             <button id="fastForwardBtn"><i class='bx bx-fast-forward'></i>
-            </i></button>
+                </i></button>
         </div>
     </div>
 
@@ -136,26 +156,58 @@ button:hover {
             <div class="features-grid">
                 <div class="feature">
                     <h3>Automated Flower Detection and Pollination</h3>
-                    <p>SmartBloom utilizes an ESP32 camera module to autonomously identify flowering plants within vertical farming systems. The integration of computer vision algorithms ensures high accuracy in flower detection, allowing the robotic car to navigate through rows of plants and stop at each flower. Once a flower is identified, a brush mechanism extends to simulate natural pollination. This automation drastically reduces the need for human intervention, streamlining the pollination process and enhancing efficiency. As a result, crops can receive the necessary pollination consistently, leading to improved yields and healthier plants..</p>
+                    <p>SmartBloom utilizes an ESP32 camera module to autonomously identify flowering plants within
+                        vertical farming systems. The integration of computer vision algorithms ensures high accuracy in
+                        flower detection, allowing the robotic car to navigate through rows of plants and stop at each
+                        flower. Once a flower is identified, a brush mechanism extends to simulate natural pollination.
+                        This automation drastically reduces the need for human intervention, streamlining the
+                        pollination process and enhancing efficiency. As a result, crops can receive the necessary
+                        pollination consistently, leading to improved yields and healthier plants..</p>
                 </div>
                 <div class="feature">
                     <h3>Scalability and Adaptability</h3>
-                    <p>Designed to fit a variety of vertical farming configurations, SmartBloom’s robotic car can be easily scaled up or down based on the specific needs of the farm. Whether it’s a small indoor garden or a large commercial vertical farm, the system can adapt to different environments. Its modular design allows for easy upgrades and integration with additional IoT devices, such as climate sensors and nutrient monitoring systems. This adaptability ensures that SmartBloom can cater to the evolving demands of modern agriculture while maximizing efficiency and output in diverse settings.</p>
+                    <p>Designed to fit a variety of vertical farming configurations, SmartBloom’s robotic car can be
+                        easily scaled up or down based on the specific needs of the farm. Whether it’s a small indoor
+                        garden or a large commercial vertical farm, the system can adapt to different environments. Its
+                        modular design allows for easy upgrades and integration with additional IoT devices, such as
+                        climate sensors and nutrient monitoring systems. This adaptability ensures that SmartBloom can
+                        cater to the evolving demands of modern agriculture while maximizing efficiency and output in
+                        diverse settings.</p>
                 </div>
                 <div class="feature">
                     <h3>5G Connectivity for Real-Time Data Processing</h3>
-                    <p>SmartBloom leverages the power of 5G technology, providing ultra-low latency and high data transfer rates essential for real-time operations. This connectivity allows the system to process large volumes of data quickly, ensuring that flower detection, navigation, and pollination actions happen almost instantaneously. The ability to connect multiple IoT devices within the farming environment ensures seamless communication and coordination between sensors, cameras, and robotic components. As a result, SmartBloom can respond promptly to changing environmental conditions, optimizing pollination strategies and improving overall farm productivity..</p>
+                    <p>SmartBloom leverages the power of 5G technology, providing ultra-low latency and high data
+                        transfer rates essential for real-time operations. This connectivity allows the system to
+                        process large volumes of data quickly, ensuring that flower detection, navigation, and
+                        pollination actions happen almost instantaneously. The ability to connect multiple IoT devices
+                        within the farming environment ensures seamless communication and coordination between sensors,
+                        cameras, and robotic components. As a result, SmartBloom can respond promptly to changing
+                        environmental conditions, optimizing pollination strategies and improving overall farm
+                        productivity..</p>
                 </div>
                 <div class="feature">
                     <h3>Eco-friendly and Scalable</h3>
-                    <p>SmartBloom leverages the power of 5G technology, providing ultra-low latency and high data transfer rates essential for real-time operations. This connectivity allows the system to process large volumes of data quickly, ensuring that flower detection, navigation, and pollination actions happen almost instantaneously. The ability to connect multiple IoT devices within the farming environment ensures seamless communication and coordination between sensors, cameras, and robotic components. As a result, SmartBloom can respond promptly to changing environmental conditions, optimizing pollination strategies and improving overall farm productivity.</p>
+                    <p>SmartBloom leverages the power of 5G technology, providing ultra-low latency and high data
+                        transfer rates essential for real-time operations. This connectivity allows the system to
+                        process large volumes of data quickly, ensuring that flower detection, navigation, and
+                        pollination actions happen almost instantaneously. The ability to connect multiple IoT devices
+                        within the farming environment ensures seamless communication and coordination between sensors,
+                        cameras, and robotic components. As a result, SmartBloom can respond promptly to changing
+                        environmental conditions, optimizing pollination strategies and improving overall farm
+                        productivity.</p>
                 </div>
                 <div class="feature">
                     <h3>
                         Sustainability and Resource Optimization
                     </h3>
                     <p>
-                        By automating the pollination process, SmartBloom contributes to sustainable farming practices by reducing reliance on chemical pollinators and minimizing resource waste. The system utilizes precision agriculture techniques, ensuring that resources such as water, nutrients, and energy are used efficiently. Real-time data collection from various IoT sensors helps to monitor the health of plants, allowing for timely interventions and reducing overall waste. This commitment to sustainability not only enhances crop yield but also supports eco-friendly farming methods, aligning with global efforts to promote environmental conservation.
+                        By automating the pollination process, SmartBloom contributes to sustainable farming practices
+                        by reducing reliance on chemical pollinators and minimizing resource waste. The system utilizes
+                        precision agriculture techniques, ensuring that resources such as water, nutrients, and energy
+                        are used efficiently. Real-time data collection from various IoT sensors helps to monitor the
+                        health of plants, allowing for timely interventions and reducing overall waste. This commitment
+                        to sustainability not only enhances crop yield but also supports eco-friendly farming methods,
+                        aligning with global efforts to promote environmental conservation.
                     </p>
                 </div>
                 <div class="feature">
@@ -163,10 +215,16 @@ button:hover {
                         User-Friendly Interface and Monitoring System
                     </h3>
                     <p>
-                        SmartBloom features an intuitive user interface that allows farmers to monitor the status of the robotic car and track pollination progress in real time. The system can provide detailed analytics on flower detection rates, pollination efficiency, and overall crop health. Users can easily adjust parameters, schedule pollination sessions, and receive notifications about system performance. This accessibility empowers farmers to make informed decisions, ensuring that they can maximize their crop yields while minimizing labor costs and optimizing operational efficiency in their vertical farming setups.
+                        SmartBloom features an intuitive user interface that allows farmers to monitor the status of the
+                        robotic car and track pollination progress in real time. The system can provide detailed
+                        analytics on flower detection rates, pollination efficiency, and overall crop health. Users can
+                        easily adjust parameters, schedule pollination sessions, and receive notifications about system
+                        performance. This accessibility empowers farmers to make informed decisions, ensuring that they
+                        can maximize their crop yields while minimizing labor costs and optimizing operational
+                        efficiency in their vertical farming setups.
                     </p>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -187,7 +245,8 @@ button:hover {
                 <h3>Data Transmission</h3>
                 <p>Data from sensors is sent to the cloud for further processing and analysis.</p>
             </div>
-            <div class="arrow-down" style="color: aliceblue;">&#8595;<br><span style="color: aliceblue;">Triggers Pollination</span></div>
+            <div class="arrow-down" style="color: aliceblue;">&#8595;<br><span style="color: aliceblue;">Triggers
+                    Pollination</span></div>
             <div class="flow-step">
                 <h3>Pollination Trigger</h3>
                 <p>AI analyzes the data and triggers robotic pollination based on environmental conditions.</p>
@@ -197,10 +256,12 @@ button:hover {
                 <h3>Robotic Pollination</h3>
                 <p>Autonomous robots equipped with pollination tools are deployed to pollinate the plants.</p>
             </div>
-            <div class="arrow-down" style="color: aliceblue;">&#8595;<br><span style="color: aliceblue;">Generates Logs</span></div>
+            <div class="arrow-down" style="color: aliceblue;">&#8595;<br><span style="color: aliceblue;">Generates
+                    Logs</span></div>
             <div class="flow-step">
                 <h3>Data Logging & Reporting</h3>
-                <p>Logs and reports are generated to track data trends, pollination success, and growth improvements.</p>
+                <p>Logs and reports are generated to track data trends, pollination success, and growth improvements.
+                </p>
             </div>
         </div>
     </section>
@@ -208,55 +269,85 @@ button:hover {
         <div class="container">
             <h2>SmartBloom as a 5G Use Case</h2>
             <p>
-                SmartBloom exemplifies the transformative potential of 5G technology in the agricultural sector, particularly in the context of vertical farming. The integration of 5G connectivity into SmartBloom enables real-time data processing, remote monitoring, and seamless communication between various components of the system. This use case highlights the numerous benefits that 5G brings to modern agriculture, ultimately leading to improved productivity, efficiency, and sustainability.
+                SmartBloom exemplifies the transformative potential of 5G technology in the agricultural sector,
+                particularly in the context of vertical farming. The integration of 5G connectivity into SmartBloom
+                enables real-time data processing, remote monitoring, and seamless communication between various
+                components of the system. This use case highlights the numerous benefits that 5G brings to modern
+                agriculture, ultimately leading to improved productivity, efficiency, and sustainability.
                 <br><br>
-                                        One of the standout features of SmartBloom is its ability to leverage 5G’s ultra-low latency to execute real-time decisions in pollination. The system incorporates an ESP32 camera module that uses advanced computer vision algorithms to detect flowering plants autonomously. With 5G connectivity, the data from the camera is transmitted instantly to the central processing unit, allowing for immediate analysis and action. This rapid communication means that the robotic car can navigate to identified flowers without delay, extending its pollination mechanism precisely when and where it’s needed.
-                                        <br><br>           
-                                        Additionally, SmartBloom benefits from high-speed data transfer rates provided by 5G, enabling the integration of multiple IoT devices. These devices can include environmental sensors that monitor temperature, humidity, and soil moisture levels in real time. By collecting and analyzing this data swiftly, SmartBloom can adapt its operations based on current conditions, ensuring optimal pollination timing and improving overall crop health. This adaptability is crucial for maximizing yield in vertical farming systems, which often rely on precise environmental control.
-                                        
-                                        Furthermore, the scalability of SmartBloom’s design is enhanced by 5G technology. As farms expand, the system can easily integrate additional sensors and robotic units without compromising performance. The robust connectivity offered by 5G ensures that all components of the SmartBloom system can communicate effectively, even in large-scale operations. This flexibility is essential for modern agriculture, where farms are increasingly utilizing smart technologies to optimize operations.
-                                        <br><br>     
-                                        The environmental impact of SmartBloom is also significant. By automating the pollination process, the reliance on chemical pollinators is minimized, promoting sustainable farming practices. The real-time monitoring capabilities facilitated by 5G help farmers make informed decisions about resource allocation, further reducing waste and environmental footprint.
-                                        
-                                        In summary, SmartBloom serves as an excellent use case for 5G technology in agriculture. By enabling real-time data processing, enhancing system scalability, and promoting sustainable practices, SmartBloom exemplifies how 5G can revolutionize vertical farming, paving the way for smarter, more efficient, and environmentally friendly agricultural practices.
+                One of the standout features of SmartBloom is its ability to leverage 5G’s ultra-low latency to execute
+                real-time decisions in pollination. The system incorporates an ESP32 camera module that uses advanced
+                computer vision algorithms to detect flowering plants autonomously. With 5G connectivity, the data from
+                the camera is transmitted instantly to the central processing unit, allowing for immediate analysis and
+                action. This rapid communication means that the robotic car can navigate to identified flowers without
+                delay, extending its pollination mechanism precisely when and where it’s needed.
+                <br><br>
+                Additionally, SmartBloom benefits from high-speed data transfer rates provided by 5G, enabling the
+                integration of multiple IoT devices. These devices can include environmental sensors that monitor
+                temperature, humidity, and soil moisture levels in real time. By collecting and analyzing this data
+                swiftly, SmartBloom can adapt its operations based on current conditions, ensuring optimal pollination
+                timing and improving overall crop health. This adaptability is crucial for maximizing yield in vertical
+                farming systems, which often rely on precise environmental control.
+
+                Furthermore, the scalability of SmartBloom’s design is enhanced by 5G technology. As farms expand, the
+                system can easily integrate additional sensors and robotic units without compromising performance. The
+                robust connectivity offered by 5G ensures that all components of the SmartBloom system can communicate
+                effectively, even in large-scale operations. This flexibility is essential for modern agriculture, where
+                farms are increasingly utilizing smart technologies to optimize operations.
+                <br><br>
+                The environmental impact of SmartBloom is also significant. By automating the pollination process, the
+                reliance on chemical pollinators is minimized, promoting sustainable farming practices. The real-time
+                monitoring capabilities facilitated by 5G help farmers make informed decisions about resource
+                allocation, further reducing waste and environmental footprint.
+
+                In summary, SmartBloom serves as an excellent use case for 5G technology in agriculture. By enabling
+                real-time data processing, enhancing system scalability, and promoting sustainable practices, SmartBloom
+                exemplifies how 5G can revolutionize vertical farming, paving the way for smarter, more efficient, and
+                environmentally friendly agricultural practices.
             </p>
         </div>
     </section>
     <div class="containers">
         <h1 style="font-size: 3rem; color: rgb(71, 30, 100);">Connect With Us</h1>
         <div class="map-container">
-            <iframe 
+            <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.40242030277!2d85.7892607!3d20.2498709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7a3b9692fff%3A0x87cd0a356bbc39ce!2sITER%2C%20Siksha%20'O'%20Anusandhan!5e0!3m2!1sen!2sin!4v1689514124518!5m2!1sen!2sin"
                 allowfullscreen>
             </iframe>
         </div>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">Reach
+            us on:</p><br>
         <div class="contact-links">
-            <a href="mailto:silentspeak06@gmail.com" class="email-link">Email Us</a>
-            <a href="https://wa.me/919031358194" target="_blank">Chat on WhatsApp</a>
+            <a href="mailto:silentspeak06@gmail.com" class="email-link"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/919031358194" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://x.com/home" target="_blank" style="background-color: #222;"><i
+                    class="fa-brands fa-twitter"></i></a> <!--Use your own twitter handle-->
         </div>
     </div>
-    <footer style="display: flex ; justify-content: left; margin-left: 0.1%;   background: linear-gradient(135deg, #007acc, #00cc99);" >
+    <footer
+        style="display: flex ; justify-content: left; margin-left: 0.1%;   background: linear-gradient(135deg, #007acc, #00cc99);">
         <div>
-            <p>© 2024 SmartBloom | Designed By Smart Bloom Team  </p>
+            <p>© 2024 SmartBloom | Designed By Smart Bloom Team </p>
         </div>
-        
-        
-           
-        
-        <div  style="margin-left: 15px ;border-radius: 100%;background-color: #a4eef2;padding: 10px;margin-top: -8px;">
+
+
+
+        <div style="margin-left: 15px ;border-radius: 100%;background-color: #a4eef2;padding: 10px;margin-top: -8px;">
             <a href="#home" style="font-size: 1.5rem 0.5rem; margin-right: 10%;"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
 
-        
 
-        <form class="feedback-form" action="#" method="POST" style="justify-content: center;margin-left: 620px; border-radius:140%;"></form>
-            <input type="text" name="feedback" placeholder="Your feedback...">
-            <input type="submit" value="Submit">
+        <form class="feedback-form" action="#" method="POST" style="margin-left: 620px; border-radius:140%;"></form>
+        <input type="text" name="feedback" placeholder="Your feedback..."
+            style="width: 25%;border-radius: 5px;text-align: center;">
+        <input type="submit" value="Submit"
+            style="color: whitesmoke;background-color: #0008ff;padding: 10px;border-radius: 15px; box-shadow: grey;">
         </form>
 
-        
+
     </footer>
     <script src="scripts.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
