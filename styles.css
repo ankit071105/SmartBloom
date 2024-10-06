@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@
 body {
     text-align: justify;
 
-    background:linear-gradient(to top right, rgb(0, 19, 56) 30%, rgb(157, 0, 255) 100%);
+    background: linear-gradient(to top right, rgb(0, 19, 56) 30%, rgb(157, 0, 255) 100%);
 }
 
 nav {
@@ -69,20 +70,22 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    
+
 }
 
 .hero h2 {
     font-size: 48px;
-color: aliceblue;
+    color: aliceblue;
 }
-h2{
+
+h2 {
     font-size: 48px;
-    
+
     padding: 20px;
     color: rgb(43, 0, 128);
 }
-p{
+
+p {
     text-align: start;
     font-family: "Zilla Slab", serif;
     font-style: italic;
@@ -92,6 +95,7 @@ p{
 
 
 }
+
 .cta {
     padding: 10px 20px;
     background-color: #fff;
@@ -116,8 +120,8 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-background-color: aliceblue;
-border-radius: 20px;
+    background-color: aliceblue;
+    border-radius: 20px;
     box-shadow: 0 14px 14px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -139,12 +143,15 @@ border-radius: 20px;
     background-color: #f9f9f9;
 }
 
+
 footer {
     background-color: #0066cc;
     color: white;
     padding: 20px;
     text-align: center;
 }
+
+
 @media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
@@ -187,7 +194,8 @@ footer {
 .back-to-top.show {
     display: block;
 }
-.feature p{
+
+.feature p {
     font-size: small;
     font-family: "Zilla Slab", serif;
     font-weight: 400;
@@ -195,7 +203,8 @@ footer {
     letter-spacing: 1px;
     padding: 20px;
 }
-footer p{
+
+footer p {
     text-align: center;
     color: rgb(108, 35, 140);
     font-weight: bolder;
@@ -211,7 +220,8 @@ footer p{
 
 h1 {
     font-size: 2rem;
-  color: #00ffd9;
+    color: #00ffd9;
+    margin-bottom: 20px;
 }
 
 .flowchart-container {

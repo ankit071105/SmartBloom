@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: justify;
+
+    background:linear-gradient(to top right, rgb(0, 19, 56) 30%, rgb(157, 0, 255) 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #0066cc;
+}
+
+nav .logo h1 {
+    color: #fff;
+    font-size: 62px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+nav ul {
+    margin-right: 30px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color:rgba(0, 0, 0, 0.5); /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+    border-radius: 5px; /* Optional: Rounded corners on hover */
+  }
+
+.menu-toggle {
+    display: none;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    background: linear-gradient(135deg, #007acc, #00cc99);
+    color: rgb(179, 249, 255);
+    text-align: start;
+    font-family: "Zilla Slab", serif;
+    font-style: italic;
+    font-size: small;
+    font-weight: 400;
+    text-align: justify;
+
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.hero h2 {
+    font-size: 50px;
+    color: aliceblue;
+    margin-bottom: 100px;
+    line-height: 1.5;
+     text-decoration: underline; 
+    /* text-decoration-color: #ff5733; Sets underline color */
+    /* text-underline-offset: 2px; /* Adjusts the distance from the text */
+    /* text-decoration-thickness: 3px; */ 
+} 
+h2{
+    font-size: 65px;
+    
+    padding: 8px;
+    color: rgb(43, 0, 128);
+}
+p{
+    margin-top: -16px;
+    text-align: start;
+    font-family: "Zilla Slab", serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+
+
+}
+.cta {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007acc;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.hero-image img {
+    size: 200px;
+    margin-top: 30px;
+    margin-left: 80px;
+    width: 100%;
+    max-width: 500px;
+    padding: 80px;
+
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+background-color: aliceblue;
+border-radius: 20px;
+    box-shadow: 0 14px 14px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container .h2{
+    margin-bottom: 3%;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#usecase {
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #0066cc;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+.cta:hover {
+    background-color: #00cc99;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007acc;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+.back-to-top.show {
+    display: block;
+}
+.feature p{
+    font-size: small;
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    color: rgb(108, 35, 140);
+    font-weight: bolder;
+
+}
+
+
+#flowchart {
+    text-align: center;
+    background: linear-gradient(135deg, #007acc, #00cc99);
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2rem;
+  color: #00ffd9;
+    margin-bottom: 20px;
+}
+
+.flowchart-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.flow-step {
+    background-color: #263753;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 180px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.flow-step h3 {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.flow-step p {
+    font-size: 0.85rem;
+    margin: 10px 0 0;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #cbe4ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow span {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: #ccdce2;
+}
+
+.arrow-down {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .flowchart-container {
+        grid-template-columns: 1fr;
+    }
+}
