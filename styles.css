@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 30px;
     background-color: #0066cc;
 }
 
@@ -32,13 +32,18 @@ nav .logo h1 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    color: rgb(249, 213, 122);
 }
 
 .menu-toggle {
