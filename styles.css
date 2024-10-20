@@ -9,46 +9,98 @@
 }
 
 body {
-    text-align: justify;
-
-    background: linear-gradient(to top right, rgb(0, 19, 56) 30%, rgb(157, 0, 255) 100%);
+    font-family: 'Arial', sans-serif;
 }
 
-nav {
+nav a {
+    text-decoration: none;
+}
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
-    background-color: #0066cc;
-}
-
-nav .logo h1 {
-    color: #fff;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: bolder;
-    font-style: normal;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-nav ul li a {
+    padding: 15px 50px;
+    background-color: rgba(0, 122, 204, 1);
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5), -5px -5px 5px rgba(0, 0, 0, 0.3);
 }
 
-nav a:hover{
-    color: rgb(249, 213, 122);
+.navbar .logo h1 {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #00cc99;
 }
 
 .menu-toggle {
     display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 122, 204, 1);
+        flex-direction: column;
+        display: none;
+        text-align: center;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Transparent Navbar on Scroll */
+.navbar.transparent {
+    background-color: rgba(0, 122, 204, 0.8);
+}
+
+
 
 .hero {
     display: grid;
